@@ -19,7 +19,8 @@ import { CourseInfoComponent } from './courses/course-info.component';
     ReplacePipe,
     NavBarComponent,
     Error404Component,
-    CourseListComponent
+    CourseListComponent,
+    CourseInfoComponent
   ],
   imports: [
     BrowserModule,
