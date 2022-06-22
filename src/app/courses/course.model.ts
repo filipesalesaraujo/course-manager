@@ -6,5 +6,6 @@ export interface Course {
   code: string;
   duration: number;
   rating: number;
-  releaseDate: string; 
+  releaseDate: string;
+  description: string;
 }
