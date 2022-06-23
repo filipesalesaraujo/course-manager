@@ -5,17 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Error404Component } from './error404/error404.component';
 import { CourseModule } from './courses/course.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     Error404Component,
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
