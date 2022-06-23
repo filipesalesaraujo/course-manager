@@ -26,10 +26,11 @@ export class CourseService {
         course
       );
     } else {
-      return this.httpClient.post<Course>(
-        `${this.courseUrl}`,
-        course
-      );
+      return this.httpClient.post<Course>(`${this.courseUrl}`, course);
     }
+  }
+
+  deleteById(id: number): Observable<any> {
+    return this.httpClient.delete<any>(`${this.courseUrl}/${id}`);
   }
 }
